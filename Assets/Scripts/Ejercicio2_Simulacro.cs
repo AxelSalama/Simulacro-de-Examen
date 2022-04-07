@@ -15,21 +15,16 @@ public class Ejercicio2_Simulacro : MonoBehaviour
     void Start()
     {
         int total = precio1 + precio2 + precio3;
-        int sobra = total - precio1 + precio2 + precio3;
+        int sobra = monto - precio1 - precio2 - precio3;
+        int falta = total - monto;
+
         if (precio1 + precio2 + precio3 > monto)
         {
-            Debug.Log("La suma del precio de los tres valores es mayor al monto disponible");
+            Debug.Log("La suma del precio de los tres valores es mayor al monto disponible y falta " + falta);
         }
         else if (precio1 + precio2 + precio3 < monto)
         {
-            Debug.Log("La suma del precio de los tres valores es " + total);
+            Debug.Log("La suma del precio de los tres valores es " + total + " y sobra " + sobra);   
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
