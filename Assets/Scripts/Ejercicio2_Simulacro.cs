@@ -20,11 +20,11 @@ public class Ejercicio2_Simulacro : MonoBehaviour
 
         if (precio1 + precio2 + precio3 > monto)
         {
-            Debug.Log("La suma del precio de los tres valores es mayor al monto disponible y falta " + falta);
+            Debug.Log("La suma del precio de los tres valores es mayor al monto disponible y falta " + falta + " pesos.");
         }
         else if (precio1 + precio2 + precio3 < monto)
         {
-            Debug.Log("La suma del precio de los tres valores es " + total + " y sobra " + sobra);   
+            Debug.Log("La suma del precio de los tres valores es " + total + " pesos y sobra " + sobra + " pesos.");   
         }
     }
 }
